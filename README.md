@@ -1,8 +1,11 @@
 # vigilara-websec-joomla
 A modern, modular security dashboard and event‑monitoring plugin for Joomla
+
 Vigilara WebSec – Advanced Security Monitoring for Joomla 6
 A modern, modular security dashboard and event‑monitoring plugin for Joomla.
+
 Vigilara WebSec is a next‑generation security monitoring plugin designed for Joomla 6.
+
 It provides administrators with a clean, real‑time overview of their site’s security posture through event logging, system checks, permission analysis, and a dynamic dashboard widget.
 The plugin focuses on clarity, performance, and extensibility — making it ideal for both everyday administrators and developers who want deeper insight into their Joomla installation.
 
