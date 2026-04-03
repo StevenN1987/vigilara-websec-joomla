@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" group="system" method="upgrade" version="5.0">
+    <name>VIGILARA_WEBSEC</name>
+    <author>Steven Naschold ComputerService</author>
+    <creationDate>2026.04.03</creationDate>
+    <version>1.0.0</version>
+    <description>PLG_SYSTEM_VIGILARA_WEBSEC_DESC</description>
+
+    <files>
+        <filename plugin="vigilara_websec">vigilara_websec.php</filename>
+        <filename>install.php</filename>
+
+        <!-- WICHTIG: src zuerst -->
+        <folder>src</folder>
+
+        <!-- WICHTIG: Namespace direkt nach src -->
+        <namespace path="src">Vigilara\WebSec</namespace>
+
+        <!-- Restliche Ordner -->
+        <folder>tmpl</folder>
+        <folder>media</folder>
+    </files>
+
+   <services>
+    <service name="dashboard">
+        <class>Vigilara\WebSec\Dashboard\VigilaraWidget</class>
+        <dashboard>vigilara</dashboard>
+    </service>
+</services>
+
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_vigilara_websec.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.plg_system_vigilara_websec.ini</language>
+    </languages>
+
+    <administration>
+        <menu link="index.php?option=com_cpanel&amp;dashboard=vigilara-security">
+            Vigilara Security
+        </menu>
+    </administration>
+
+    <config></config>
+</extension>
